@@ -6,6 +6,7 @@
   padding: 0px;
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 .Landing {
   height: 100vh;
@@ -35,14 +36,16 @@
     margin-right:2rem ;
     display: block;
     right: 30px;
-}
-.aboutText>h3{
-    text-align: left;
-    font-size: 1.8rem;
-}
-.aboutText>p{
-    text-align: justify;
-    font-weight: 500;
+    h3{
+        text-align: left;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    p{
+        text-align: left;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
 }
 .aboutVideo{
     margin-left:2rem ;
