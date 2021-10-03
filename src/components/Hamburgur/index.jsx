@@ -14,13 +14,15 @@ function Hamburgur({ active, onClickHandler }) {
   });
 
   return (
-    <div className="AnimatedBtn hamburgur">
-      <span className={topClass}></span>
-      <span className={middleClass}></span>
-      <span className={bottomClass}></span>
-      <button className="AnimatedBtn-Cover" onClick={onClickHandler}>
-        &nbsp;
-      </button>
+    <div className="hamburgur">
+      <div className="AnimatedBtn ">
+        <span className={topClass}></span>
+        <span className={middleClass}></span>
+        <span className={bottomClass}></span>
+        <button className="AnimatedBtn-Cover" onClick={onClickHandler}>
+          &nbsp;
+        </button>
+      </div>
     </div>
   );
 }
