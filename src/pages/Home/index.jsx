@@ -1,5 +1,6 @@
 import { useState } from 'react';
-
+import HomeAbout from '../../components/HomeAboutUsSection';
+import MobileAppComponent from '../../components/MobileApp';
 import Header from '../../templates/Header';
 
 import './home.scss';
@@ -10,6 +11,7 @@ function Home() {
   const [isMuted, setMuted] = useState(true);
 
   return (
+    <>
     <div className="Home">
       <Header />
       <video
@@ -21,6 +23,9 @@ function Home() {
         loop="loop"
       ></video>
     </div>
+    <HomeAbout />
+    <MobileAppComponent />
+    </>
   );
 }
 
