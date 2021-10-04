@@ -9,7 +9,7 @@ const MobileAppComponent = () => {
       <img src={MobileApp} alt="" className="MobileApp_Image" />
       <div className="MobileApp_Text">
         <h2>Coming Soon</h2>
-        <h3>HamiNepal App</h3>
+        <h3>hami nepal app</h3>
         <p>
           Start and manage fundraisers, engage with <br/>supporters, and discover
           important causes <br/>— all on the go
