@@ -70,7 +70,7 @@ const index = () => {
           </ul>
         </div>
         <div className="Footer_NewsLetter">
-          <h3>newsletter</h3>
+          <h3>Newsletter</h3>
           <div className="subscribe-container">
             <input type="email" required className="subscribe" placeholder="Enter Your Email"/>
             <button className="subscribe_btn">Subscribe</button>
