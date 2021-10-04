@@ -7,7 +7,7 @@ import ErrorBoundary from '../components/ErrorBoundary';
 const PAGES = ['Home', 'PageNotFound'];
 
 function LazyLoadPages(page) {
-  const Component = lazy(() => import(/* @vite-ignore */ `../pages/${page}` ));
+  const Component = lazy(() => import(/* @vite-ignore */ `../pages/${page}/index.jsx` ));
   return (
     <ErrorBoundary>
       <Suspense fallback={PageLoadingSpinner()}>
