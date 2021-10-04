@@ -14,30 +14,35 @@
     justify-items: center;
     align-items: center;
     gap: 1rem;
-}
-.AppStore_PlayStore>img{
-    width: 140px;
-    height: 40px;
+    img{
+        width: 160px;
+        height: auto;
+    }
 }
 .MobileApp_Image{
     height: auto;
-    width: 400px;
+    width: 500px;
 }
 .MobileApp_Text{
     font-family: 'Raleway', sans-serif;
     h2 {
         display: block;
         text-align: left;
-        font-size:30px ;
+        font-size:32px ;
+        text-transform: uppercase;
     }
     h3{
+        padding:20px 0px;
         color: #9f171f;
-        font-size: 20px;
+        font-size: 22px;
         text-align: left;
     }
     p{
-        font-weight: 700;
-        font-size: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height:1.8rem;
         text-align: left;
+        color: #444;
+        margin-bottom: 20px;
     }
 }
