@@ -11,6 +11,8 @@ const routes = {
     pageName: "Contact",
   },
 
+  // Add your route here
+
   [PAGE_NOT_FOUND]: {
     private: false,
     pageName: "PageNotFound",
