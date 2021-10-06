@@ -1,10 +1,8 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense } from "react";
 
-import PageLoadingSpinner from '../components/PageLoadingSpinner';
-import ErrorBoundary from '../components/ErrorBoundary';
-
-// Add pages here
-const PAGES = ['Home', "ContactUS",'PageNotFound'];
+import PageLoadingSpinner from "../components/PageLoadingSpinner";
+import ErrorBoundary from "../components/ErrorBoundary";
+import routesHelper from "./routesHelper";
 
 function LazyLoadPages(page) {
   const Component = lazy(() => import(`../pages/${page}/index.jsx`));
@@ -19,8 +17,10 @@ function LazyLoadPages(page) {
 
 // Generate key (page): value (lazy loading component with error boundary) pair.
 const COMPONENTS = {};
-PAGES.forEach((page) => {
-  COMPONENTS[page] = LazyLoadPages(page);
-});
+for (let route in routesHelper) {
+  COMPONENTS[routesHelper[route].pageName] = LazyLoadPages(
+    routesHelper[route].pageName
+  );
+}
 
 export default COMPONENTS;

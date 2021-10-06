@@ -2,7 +2,7 @@
 
 .Header {
   z-index: 999999;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   display: flex;
@@ -16,7 +16,7 @@
 
   img {
     width: 100%;
-    max-width: 80px;
+    max-width: 120px;
     height: auto;
   }
 
@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 100rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
 
     & > * {
       width: 10px;

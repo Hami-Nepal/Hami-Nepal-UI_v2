@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.Contact-Us {
+  margin: 100px 80px 100px 80px;
+  font-family: "Raleway",sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  h1{
+      font-weight: 700;
+      font-size: 30px;
+  }
+  .Underline {
+    width: 53px;
+    height: 2px;
+    background-color: #9f1718;
+  }
+  .Contact{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .Contact-Map{
+          p{
+              font-weight: 400;
+              font-size: 16px;
+              margin: 10px 0px;
+          }
+      }
+  }
+}
+
