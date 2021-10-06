@@ -4,10 +4,10 @@ import PageLoadingSpinner from '../components/PageLoadingSpinner';
 import ErrorBoundary from '../components/ErrorBoundary';
 
 // Add pages here
-const PAGES = ['Home', 'PageNotFound'];
+const PAGES = ['Home', "ContactUS",'PageNotFound'];
 
 function LazyLoadPages(page) {
-  const Component = lazy(() => import(`../pages/${page}`));
+  const Component = lazy(() => import(`../pages/${page}/index.jsx`));
   return (
     <ErrorBoundary>
       <Suspense fallback={PageLoadingSpinner()}>
