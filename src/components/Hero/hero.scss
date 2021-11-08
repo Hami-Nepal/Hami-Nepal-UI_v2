@@ -20,14 +20,14 @@
     margin: 50px;
     h1{
         font-size: 4rem;
-        font-weight: 200;
         color: white;
         width: 43rem;
         margin-bottom: 40px;
-        font-family: Ralwey;
+        font-family: Ralwey ;
     }
     
     .button {
+      
       display: flex;
       justify-content: space-between;
       #btn_donate {
@@ -38,6 +38,13 @@
         color: white;
         border: 2px solid white;
         font-size: 25px;
+        &:hover{
+          background-color: rgba(226, 11, 11, 0.753);
+          border: transparent;
+          border-radius: 3%;
+          // box-shadow: 5px 10px 10px 10px white;
+          box-shadow:  10px 10px 20px rgb(246, 241, 241) inset;
+        }
       }
       #btn_ourwork {
         background-color: transparent;
@@ -51,6 +58,10 @@
         position: absolute;
         right: 40px;
         bottom:50px;
+        &:hover{
+          background-color: rgba(226, 11, 11, 0.753);
+          border: 3px transparent;
+        }
       }
     }
   }
