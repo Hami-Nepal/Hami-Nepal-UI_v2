@@ -1,17 +1,14 @@
-import { HOME_PAGE, PAGE_NOT_FOUND } from './constants';
-import LazyLoadPages from './LazyLoadPages';
+import LazyLoadPages from "./LazyLoadPages";
+import routesHelper from "./routesHelper";
 
 // Add Routes here
-const routes = {
-  [HOME_PAGE]: {
-    private: false,
-    component: LazyLoadPages.Home,
-  },
+const routes = {};
 
-  [PAGE_NOT_FOUND]: {
-    private: false,
-    component: LazyLoadPages.PageNotFound,
-  },
-};
+for (let path in routesHelper) {
+  routes[path] = {
+    ...routesHelper[path],
+    component: LazyLoadPages[routesHelper[path].pageName],
+  };
+}
 
 export default routes;
