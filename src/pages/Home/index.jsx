@@ -1,33 +1,24 @@
-import { useState } from 'react';
-import HomeAbout from '../../components/HomeAboutUsSection';
-import MobileAppComponent from '../../components/MobileApp';
-import Footer from '../../components/Footer';
-import Header from '../../templates/Header';
-import './home.scss';
+import HomeAbout from "../../components/HomeAboutUsSection"
+import MobileAppComponent from "../../components/MobileApp"
+import Footer from "../../components/Footer"
+import Header from "../../templates/Header"
+import Hero from "../../components/Hero/hero"
+import React from "react"
 
-import dummyVideo from './video.mp4';
+import "./home.scss"
 
 function Home() {
-  const [isMuted, setMuted] = useState(true);
-
   return (
     <>
-    <div className="Home">
-      <Header />
-      <video
-        className="Home__video"
-        src={dummyVideo}
-        preload="metadata"
-        autoPlay={true}
-        muted={isMuted}
-        loop="loop"
-      ></video>
-    </div>
-    <HomeAbout />
-    <MobileAppComponent />
-    <Footer/>
+      <div className="Home">
+        <Header />
+        <Hero />
+        <HomeAbout />
+        <MobileAppComponent />
+        <Footer />
+      </div>
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home

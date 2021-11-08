@@ -1,0 +1,54 @@
+
+
+
+.main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  .Home__video {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+  }
+  .slogan {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 50px;
+    h1{
+        font-size: 4rem;
+        font-weight: 400;
+        color: white;
+        width: 43rem;
+        margin-bottom: 40px;
+    }
+    
+    .button {
+      display: flex;
+      justify-content: space-between;
+      #btn_donate {
+        cursor: pointer;
+        background-color: transparent;
+                height: 75px;
+        width: 255px;
+        color: white;
+        border: 2px solid white;
+        font-size: 25px;
+      }
+      #btn_ourwork {
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 100%;
+        width: 150px;
+        color: white;
+        height: 150px;
+        font-size: 25px;
+        cursor: pointer;
+        position: absolute;
+        right: 40px;
+        bottom:50px;
+      }
+    }
+  }
+}
