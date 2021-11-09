@@ -27,7 +27,7 @@
     }
     
     .button {
-      
+      font-family: Ralwey ;
       display: flex;
       justify-content: space-between;
       #btn_donate {
@@ -42,8 +42,7 @@
           background-color: rgba(226, 11, 11, 0.753);
           border: transparent;
           border-radius: 3%;
-          // box-shadow: 5px 10px 10px 10px white;
-          box-shadow:  10px 10px 20px rgb(246, 241, 241) inset;
+          
         }
       }
       #btn_ourwork {

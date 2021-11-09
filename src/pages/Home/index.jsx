@@ -2,7 +2,7 @@ import HomeAbout from "../../components/HomeAboutUsSection"
 import MobileAppComponent from "../../components/MobileApp"
 import Footer from "../../components/Footer"
 import Header from "../../templates/Header"
-import Hero from "../../components/Hero/hero"
+import Hero from "../../components/Hero/index"
 import React from "react"
 
 import "./home.scss"
