@@ -5,7 +5,7 @@ import ErrorBoundary from "../components/ErrorBoundary";
 import routesHelper from "./routesHelper";
 
 function LazyLoadPages(page) {
-  const Component = lazy(() => import(/* @vite-ignore */ `../pages/${page}/index.jsx` ));
+  const Component = lazy(() => import(`../pages/${page}/index.jsx`));
   return (
     <ErrorBoundary>
       <Suspense fallback={PageLoadingSpinner()}>
