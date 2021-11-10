@@ -1,0 +1,47 @@
+.errorPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.errorPage__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.errorPage__image {
+  width: 90%;
+  max-width: 70px;
+  height: auto;
+}
+
+.errorPage__heading {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #9f171f;
+  opacity: 0.8;
+}
+
+.errorPage__context {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+/*# sourceMappingURL=errorBoundary.css.map */

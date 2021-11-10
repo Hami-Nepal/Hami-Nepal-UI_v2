@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.MobileApp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.AppStore_PlayStore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.AppStore_PlayStore img {
+  width: 160px;
+  height: auto;
+}
+
+.MobileApp_Image {
+  height: auto;
+  width: 500px;
+}
+
+.MobileApp_Text {
+  font-family: 'Raleway', sans-serif;
+}
+
+.MobileApp_Text h2 {
+  display: block;
+  text-align: left;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.MobileApp_Text h3 {
+  padding: 20px 0px;
+  color: #9f171f;
+  font-size: 22px;
+  text-align: left;
+}
+
+.MobileApp_Text p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.8rem;
+  text-align: left;
+  color: #444;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -14,8 +14,8 @@ function Home() {
         <Header />
         <Hero />
         <HomeAbout />
-        <MobileAppComponent />
-        <Footer />
+        {/* <MobileAppComponent /> */}
+        {/* <Footer /> */}
       </div>
     </>
   )
