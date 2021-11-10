@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.Footer {
+  padding: 2rem 0rem;
+  width: 100%;
+  gap: 2rem;
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid rgba(151, 151, 151, 0.41);
+  background-color: #FBFBFB;
+}
+
+.Footer .Footer_Widgets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: auto;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.Footer .Footer_Widgets .Footer_SiteMap ul {
+  margin-top: 20px;
+  line-height: 2rem;
+  font-weight: 500;
+  list-style: none;
+  font-size: 16px;
+  color: #524f4f;
+}
+
+.Footer .Footer_Widgets .Footer_Social ul {
+  margin-top: 20px;
+  line-height: 2rem;
+  font-weight: 500;
+  list-style: none;
+  font-size: 16px;
+  color: #524f4f;
+}
+
+.Footer .Footer_Widgets .Footer_Social ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer .Footer_Widgets .Footer_NewsLetter .subscribe {
+  margin-top: 20px;
+  border: none;
+  height: 50px;
+  width: 300px;
+  border-radius: 90px 0px 0px 90px;
+  -webkit-box-shadow: 4px -1px 16px 2px rgba(181, 174, 174, 0.25);
+          box-shadow: 4px -1px 16px 2px rgba(181, 174, 174, 0.25);
+  outline: none;
+  padding-left: 20px;
+}
+
+.Footer .Footer_Widgets .Footer_NewsLetter button {
+  border: none;
+  height: 50px;
+  background: #A11B1C;
+  color: white;
+  width: 100px;
+  border-radius: 0px 90px 90px 0px;
+  -webkit-box-shadow: 4px -1px 16px 2px rgba(181, 174, 174, 0.25);
+          box-shadow: 4px -1px 16px 2px rgba(181, 174, 174, 0.25);
+}
+
+.Footer .Footer_Widgets .Footer_NewsLetter .Address {
+  margin-top: 30px;
+  font-weight: 700px;
+  font-size: 16px;
+  color: #444;
+}
+
+.Footer .Footer_Widgets .Footer_NewsLetter .Phone {
+  margin-top: 10px;
+  font-weight: 700px;
+  font-size: 16px;
+  color: #444;
+}
+
+.Footer .CopyRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0rem 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer .CopyRight h3 {
+  font-size: 16px;
+}
+
+.Footer .CopyRight h3 span {
+  color: #A11B1C;
+}
+/*# sourceMappingURL=style.css.map */

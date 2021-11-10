@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.LatestNews {
+  margin: 4rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.Underline {
+  width: 100%;
+  height: 2px;
+  margin-top: 8px;
+  background: black;
+}
+
+.newsTitle {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.newsSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 7rem;
+  gap: 33px;
+}
+
+.line {
+  margin: 0px 7rem;
+}
+
+.newsDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #B6B6B6;
+}
+
+.video-section {
+  margin: 40px 0px;
+}
+
+.text-section {
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.text-section h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.22px;
+}
+
+.text-section p {
+  margin-top: 3px;
+  line-height: 28.18px;
+  font-size: 16px;
+}
+
+.text-section .seeMore {
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.text-section .line {
+  margin: 0px 7rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .LatestNews {
+    margin: 1rem;
+    font-family: "Raleway", sans-serif;
+  }
+  .newsSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 33px;
+  }
+  .text-section {
+    line-height: 2rem;
+    text-align: justify;
+  }
+  .text-section h3 {
+    font-weight: 700;
+    font-size: 18px;
+    width: 300px;
+    line-height: 35.22px;
+  }
+  .text-section p {
+    margin-top: 3px;
+    line-height: 28.18px;
+    font-size: 13px;
+  }
+  .text-section .seeMore {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .line {
+    margin: 0px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .LatestNews {
+    margin: 1rem;
+    font-family: "Raleway", sans-serif;
+  }
+  .newsSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 7rem;
+    gap: 33px;
+  }
+  .text-section {
+    line-height: 2rem;
+    text-align: justify;
+  }
+  .text-section h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35.22px;
+  }
+  .text-section p {
+    margin-top: 3px;
+    line-height: 28.18px;
+    font-size: 13px;
+  }
+  .text-section .seeMore {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .newsSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 7rem;
+    gap: 33px;
+  }
+  .text-section {
+    line-height: 2rem;
+    text-align: justify;
+  }
+  .text-section h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35.22px;
+  }
+  .text-section p {
+    margin-top: 3px;
+    line-height: 28.18px;
+    font-size: 14px;
+  }
+  .text-section .seeMore {
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=style.css.map */
