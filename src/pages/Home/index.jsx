@@ -15,7 +15,7 @@ function Home() {
         <Hero />
         <HomeAbout />
         {/* <MobileAppComponent /> */}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   )
