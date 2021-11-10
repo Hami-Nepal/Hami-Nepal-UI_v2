@@ -25,7 +25,7 @@ const Hero = () => {
 
       <div className="lowerContent">
         <div className="lowerContent__donate">
-          <h1>For the people by the people</h1>
+          <h1 className="slogan">For the people by the people</h1>
           <Button text="Donate" variant="transparent" />
         </div>
         <Link onChange={handleClose} to="/our-work">

@@ -1,28 +1,28 @@
 @import "../../variables";
 
 .Button {
-    width: 255px;
-    height: 75px;
-    font-size: 1.5rem;
-    padding: 12px 40px;
-    font-weight: 600;
-    border: 3px solid;
+  width: 255px;
+  height: 75px;
+  font-size: 1.5rem;
+  padding: 12px 40px;
+  font-weight: 600;
+  border: 3px solid;
 
-    &-transparent {
-        background-color: transparent;
-        border-color: white;
-        color: white;
-    }
+  &-transparent {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+  }
 
-    &-white {
-        background-color: white;
-        border-color: $primary-color;
-        color: black;
-    }
+  &-white {
+    background-color: white;
+    border-color: $primary-color;
+    color: black;
+  }
 
-    &-official {
-        background-color: $primary-color;
-        border-color: $primary-color;
-        color: white;
-    }
+  &-official {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: white;
+  }
 }
