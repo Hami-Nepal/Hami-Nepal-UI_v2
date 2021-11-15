@@ -6,6 +6,7 @@ import Hero from "../../components/Hero/index"
 import React from "react"
 
 import "./home.scss"
+import BoardMembers from "../../components/BoardMembers"
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
         <Header />
         <Hero />
         <HomeAbout />
+        <BoardMembers />
         {/* <MobileAppComponent /> */}
         <Footer />
       </div>
