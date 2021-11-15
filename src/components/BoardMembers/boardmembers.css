@@ -82,7 +82,7 @@
     color: #565656;
 }
 
- @media (min-width:786px){
+ @media (max-width:786px){
     
     .board-main .t-body{
         height:100%;
@@ -96,7 +96,9 @@
 } 
 
 
-@media(min-width:480px){
+
+
+ @media(min-width:480px){
     .board-main{
         margin: 2rem;
         height: auto;
@@ -118,4 +120,4 @@
     
     }
     
-}
+} 

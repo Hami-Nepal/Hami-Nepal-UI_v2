@@ -16,7 +16,7 @@ const BoradMembers = () => {
         <h5>President</h5>
         <div className="details">
           <i className="quote left icon"></i>
-          <p>
+          <p className="b_detail">
             On 25 April, 2015 an earthquake with a magnitudeof 7.8 Richter scale
             struck Nepal along with continued aftershocks occurring throughout
             the nation at the intervals of 15–20 minutes. The earthquake
@@ -42,9 +42,9 @@ const BoradMembers = () => {
           <i style={{ color: "#0073B1" }} className="linkedin icon"></i>
         </div>
       </div>
-      <div>
+      {/* <div>
         <img src={arrowRight} />
-      </div>
+      </div> */}
     </div>
   )
 }
