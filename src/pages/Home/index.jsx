@@ -4,6 +4,7 @@ import Header from '../../templates/Header';
 import Hero from '../../components/Hero';
 import Board from '../../components/Board';
 import HomeTransparency from '../../components/HomeTransparency';
+import Partner from '../../components/Home Page - Our Partner/';
 
 import './home.scss';
 
@@ -16,6 +17,7 @@ function Home() {
         <HomeTransparency />
         <Board />
         <MobileAppComponent />
+        <Partner />
         <Footer />
       </div>
     </>
