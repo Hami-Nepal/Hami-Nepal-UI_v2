@@ -1,4 +1,9 @@
-import {  CONTACT_US_PAGE, HOME_PAGE, PAGE_NOT_FOUND } from "./constants";
+import {
+  CONTACT_US_PAGE,
+  HOME_PAGE,
+  OUR_WORK,
+  PAGE_NOT_FOUND,
+} from "./constants"
 
 const routes = {
   [HOME_PAGE]: {
@@ -10,13 +15,16 @@ const routes = {
     private: false,
     pageName: "ContactUS",
   },
-
+  [OUR_WORK]: {
+    private: false,
+    pageName: "OurWork",
+  },
   // Add your route here
 
   [PAGE_NOT_FOUND]: {
     private: false,
     pageName: "PageNotFound",
   },
-};
+}
 
-export default routes;
+export default routes

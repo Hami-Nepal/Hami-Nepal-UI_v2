@@ -1,8 +1,8 @@
-import React from "react";
-import "./style.scss";
-import MobileApp from "./mobileapp.jpg";
-import Playstore from "./playstore.png";
-import Appstore from "./appstore.png";
+import React from "react"
+import "./style.scss"
+import MobileApp from "./mobileapp.jpg"
+import Playstore from "./playstore.png"
+import Appstore from "./appstore.png"
 const MobileAppComponent = () => {
   return (
     <div className="MobileApp">
@@ -11,8 +11,8 @@ const MobileAppComponent = () => {
         <h2>Coming Soon</h2>
         <h3>hami nepal app</h3>
         <p>
-          Start and manage fundraisers, engage with <br/>supporters, and discover
-          important causes <br/>— all on the go
+          Start and manage fundraisers, engage with <br />
+          supporters, and discover important causes <br />— all on the go
         </p>
         <div className="AppStore_PlayStore">
           <img src={Playstore} alt="playstore" />
@@ -20,7 +20,7 @@ const MobileAppComponent = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MobileAppComponent;
+export default MobileAppComponent

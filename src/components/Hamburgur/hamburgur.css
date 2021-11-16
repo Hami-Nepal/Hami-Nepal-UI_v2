@@ -1,0 +1,60 @@
+.AnimatedBtn {
+  position: relative;
+  min-width: 1.5rem;
+}
+
+.AnimatedBtn-Top, .AnimatedBtn-Middle, .AnimatedBtn-Bottom {
+  width: 100%;
+  display: block;
+  height: 0.25rem;
+  background-color: #9f171f;
+  border-radius: 100rem;
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.AnimatedBtn-Middle {
+  margin: 0.25rem 0;
+}
+
+.AnimatedBtn-MiddleClick {
+  opacity: 0;
+}
+
+.AnimatedBtn-TopClick {
+  -webkit-transform: translateY(0.5rem) rotate(-45deg);
+          transform: translateY(0.5rem) rotate(-45deg);
+}
+
+.AnimatedBtn-BottomClick {
+  -webkit-transform: translateY(-0.5rem) rotate(45deg);
+          transform: translateY(-0.5rem) rotate(45deg);
+}
+
+.AnimatedBtn-Cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburgur {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100rem;
+  background-color: white;
+}
+/*# sourceMappingURL=hamburgur.css.map */

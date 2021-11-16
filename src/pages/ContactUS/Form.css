@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+input, textarea {
+  width: 603px;
+  height: 50px;
+  padding-left: 20px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  -webkit-box-shadow: 0 0 5px #51cbee;
+          box-shadow: 0 0 5px #51cbee;
+  padding: 20px;
+  border: 1px solid #51cbee;
+}
+
+textarea {
+  height: 192px;
+  resize: none;
+}
+
+textarea::-webkit-input-placeholder {
+  position: absolute;
+  top: 20px;
+  font-family: "Raleway",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+textarea:-ms-input-placeholder {
+  position: absolute;
+  top: 20px;
+  font-family: "Raleway",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+textarea::-ms-input-placeholder {
+  position: absolute;
+  top: 20px;
+  font-family: "Raleway",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+textarea::placeholder {
+  position: absolute;
+  top: 20px;
+  font-family: "Raleway",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Error {
+  outline: 2px solid #d52020 !important;
+}
+
+.Error-Message {
+  padding: 10px 0px;
+  color: #d52020;
+}
+
+.Submit-Form {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 14px 104px;
+  border: none;
+  color: white;
+  background: #A11B1C;
+  font-weight: 400;
+}
+/*# sourceMappingURL=Form.css.map */
