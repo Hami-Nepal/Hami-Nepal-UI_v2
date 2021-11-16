@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.how-we-work {
+  margin: 2rem 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.8rem;
+  font-family: "Raleway", sans-serif;
+}
+.headlineWork {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 700;
+}
+.lineWork {
+  height: 224px;
+  width: 1px;
+  background-color: black;
+}
+.paragraphWork {
+  width: 550px;
+  line-height: 2rem;
+}
+.seeMore {
+  font-weight: 700;
+  display: block;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media only screen and (max-width: 480px) {
+    .how-we-work {
+        margin: 2rem 3rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.3rem;
+        font-family: "Raleway", sans-serif;
+      }
+      .headlineWork {
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 700;
+      }
+      .lineWork {
+        height: 1px;
+        width: 224px;
+        background-color: black;
+      }
+      .paragraphWork {
+          text-align: center;
+        width: 250px;
+        line-height: 2rem;
+      }
+      .seeMore {
+        font-weight: 700;
+        display: block;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .how-we-work {
+    margin: 2rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Raleway", sans-serif;
+  }
+  .headlineWork {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .lineWork {
+    height: 1px;
+    width: 224px;
+    background-color: black;
+  }
+  .paragraphWork {
+      text-align: center;
+    width: 250px;
+    line-height: 2rem;
+  }
+  .seeMore {
+    font-weight: 700;
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  .how-we-work {
+    margin: 10px 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.8rem;
+    font-family: "Raleway", sans-serif;
+  }
+  .headlineWork {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .lineWork {
+    height: 224px;
+    width: 1px;
+    background-color: black;
+  }
+  .paragraphWork {
+    width: 550px;
+    line-height: 2rem;
+  }
+  .seeMore {
+    font-weight: 700;
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
