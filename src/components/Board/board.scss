@@ -1,3 +1,5 @@
+@import "../../variables";
+
 ul {
   list-style-type: none;
 }
@@ -60,6 +62,10 @@ p {
   width: 100%;
   background: #ffffff;
   padding-top: 10px;
+  @media (max-width: $gt-medium-screen) {
+    width: fit-content;
+    height: fit-content;
+  }
 }
 
 .section {
