@@ -1,13 +1,12 @@
-import HomeAbout from "../../components/HomeAboutUsSection"
-import MobileAppComponent from "../../components/MobileApp"
-import Footer from "../../components/Footer"
-import Header from "../../templates/Header"
-import Hero from "../../components/Hero/index"
-import React from "react"
-import Board from "../../components/Board/index"
+import MobileAppComponent from '../../components/MobileApp';
+import Footer from '../../components/Footer';
+import Header from '../../templates/Header';
+import Hero from '../../components/Hero/index';
+import React from 'react';
+import Board from '../../components/Board/index';
+import HomeTransparency from '../../components/HomeTransparency';
 
-import "./home.scss"
-import BoardMembers from "../../components/BoardMembers"
+import './home.scss';
 
 function Home() {
   return (
@@ -15,14 +14,13 @@ function Home() {
       <div className="Home">
         <Header />
         <Hero />
-        {/* <HomeAbout /> */}
+        <HomeTransparency />
         <Board />
-        {/* <BoardMembers /> */}
         <MobileAppComponent />
         <Footer />
       </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
