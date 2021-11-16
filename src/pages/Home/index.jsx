@@ -1,5 +1,6 @@
 import HomeAbout from "../../components/HomeAboutUsSection"
 import MobileAppComponent from "../../components/MobileApp"
+import Partner from "../../components/Home Page - Our Partner/index"
 import Footer from "../../components/Footer"
 import Header from "../../templates/Header"
 import Hero from "../../components/Hero/index"
@@ -16,6 +17,7 @@ function Home() {
         <HomeAbout />
         <Work/>
         {/* <MobileAppComponent /> */}
+        <Partner/>
         <Footer />
       </div>
     </>
