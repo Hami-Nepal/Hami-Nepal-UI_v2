@@ -5,9 +5,8 @@ import Header from "../../templates/Header"
 import Hero from "../../components/Hero/index"
 import React from "react"
 import Board from "../../components/Board/index"
-
+import Testimonals from "../../components/Testimonials/index"
 import "./home.scss"
-import BoardMembers from "../../components/BoardMembers"
 
 function Home() {
   return (
@@ -17,7 +16,7 @@ function Home() {
         <Hero />
         {/* <HomeAbout /> */}
         <Board />
-        {/* <BoardMembers /> */}
+        {/* <Testimonals /> */}
         <MobileAppComponent />
         <Footer />
       </div>

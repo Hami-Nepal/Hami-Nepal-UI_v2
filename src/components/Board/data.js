@@ -23,8 +23,7 @@ const people = [
   },
   {
     id: 2,
-    image:
-      "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
+    image: "/src/components/Board/photos/vicePresident.jpg",
     name: "RUPAK GHIMIRE",
     title: "Vice President",
     quote: `Dr. Rupak B. K. Ghimire is our young and enthusiastic dermatologist and hair transplant surgeon. He is popularly known as Ayushman Ghimire as he has been a winner of Mr Nepal 2011, lead actor in a movie and appeared in many tv commercials and advertisements.
@@ -36,8 +35,7 @@ const people = [
   },
   {
     id: 3,
-    image:
-      "https://scontent.fbdp1-1.fna.fbcdn.net/v/t39.30808-6/239118015_3992343530877888_3617984917267790857_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=qdJnF_dp3oIAX_AbN0v&_nc_ht=scontent.fbdp1-1.fna&oh=7f0d4f18513429fa59034ac6e7c9e4b2&oe=61977D7B",
+    image: "/src/components/Board/photos/healthAdvisior.jpg",
 
     name: "GARIMA SHRESTHA",
     title: "Health Advisior",
@@ -53,8 +51,7 @@ const people = [
   },
   {
     id: 4,
-    image:
-      "https://scontent.fbdp1-1.fna.fbcdn.net/v/t1.6435-9/90297393_3475437415816080_6994458355838222336_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5EWAgU6yAbcAX9sK5OQ&_nc_ht=scontent.fbdp1-1.fna&oh=3370cb1e02fbae3d60dc5da113d31462&oe=61BA6F5C",
+    image: "/src/components/Board/photos/generalSecurity.jpg",
     name: "PRAGYA BAJRACHARYA",
     title: "General Security",
     quote: `Pragya Bajracharya, unemployed, left a well paying job in a Danish Company to dedicate her time in Hami Nepal during the second lockdown. She states ‘Every minute is a chance to change the world. If you believe in your dreams, you have to advocate it everywhere, regardless of how unpleasant some outcomes might be.’ 
@@ -66,8 +63,7 @@ const people = [
   },
   {
     id: 5,
-    image:
-      "https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80",
+    image: "/src/components/Board/photos/treasurer.jpg",
     name: "Yogendra shreshtha",
     title: "Treasurer",
     quote: `My name is Yogendra Shrestha, and I've been volunteering at Hami Nepal as the treasurer. I've also been a member of a couple of social groups, including the Jagaruk Maru Yuba Club and the Maruhiti toll sudhar samiti. The major reason I volunteered at Hami Nepal is because I am passionate about working in the field of social work. I enjoy serving the people of my country and hope to set an example for others.
