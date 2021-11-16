@@ -6,11 +6,13 @@ import './homeTransparency.scss';
 
 const HomeTransparency = () => {
   const [donors, setDonors] = useState([]);
+  const [transparency, setTransparency] = useState({});
 
   useEffect(async () => {
     const promises = [
       API.get('/donations?limit=5&page=1'),
-      API.get('/donations/userdonations'),
+      API.get('/find/totalDonations'),
+      API.get('/find/totalExpenses'),
     ];
 
     const res = await Promise.all(promises);
@@ -18,8 +20,13 @@ const HomeTransparency = () => {
     const sortDonors = [...res[0].data.data];
     setDonors(sortDonors.sort((a, b) => b.donation_amount - a.donation_amount));
 
-    console.log(res[1]);
-  });
+    setTransparency({
+      total: res[1].data.data[0].donation,
+      expense: res[2].data.data[0].total_expenses,
+      remaining:
+        res[1].data.data[0].donation - res[2].data.data[0].total_expenses,
+    });
+  }, []);
 
   return (
     <div className="homeTransparency">
@@ -28,17 +35,17 @@ const HomeTransparency = () => {
       <div className="homeTransparency__threeColumns">
         <div className="donations">
           <div className="donations__data">
-            <h2>$XXXB</h2>
+            <h2>${transparency.total}</h2>
             <p>DONATION RECIEVED</p>
           </div>
           <hr className="donations__hr" />
           <div className="donations__data">
-            <h2>$XXXB</h2>
+            <h2>${transparency.expense}</h2>
             <p>EXPENDITURE</p>
           </div>
           <hr className="donations__hr" />
           <div className="donations__data">
-            <h2>$XXXB</h2>
+            <h2>${transparency.remaining}</h2>
             <p>REMAINING DONATION</p>
           </div>
         </div>
