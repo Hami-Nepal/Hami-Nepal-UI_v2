@@ -1,5 +1,5 @@
-import "./style.scss";
-import React from "react";
+import './style.scss';
+import React from 'react';
 const index = () => {
   return (
     <footer className="Footer">
@@ -33,7 +33,7 @@ const index = () => {
             <li>
               <svg
                 id="Bold"
-                enable-background="new 0 0 24 24"
+                enableBackground="new 0 0 24 24"
                 height="20px"
                 viewBox="0 0 24 24"
                 width="20px"
@@ -46,7 +46,7 @@ const index = () => {
             <li>
               <svg
                 id="Bold"
-                enable-background="new 0 0 24 24"
+                enableBackground="new 0 0 24 24"
                 height="20px"
                 viewBox="0 0 24 24"
                 width="20px"
@@ -72,7 +72,12 @@ const index = () => {
         <div className="Footer_NewsLetter">
           <h3>Newsletter</h3>
           <div className="subscribe-container">
-            <input type="email" required className="subscribe" placeholder="Enter Your Email"/>
+            <input
+              type="email"
+              required
+              className="subscribe"
+              placeholder="Enter Your Email"
+            />
             <button className="subscribe_btn">Subscribe</button>
           </div>
           <span className="space"></span>
