@@ -53,14 +53,19 @@ function Board() {
                 <h4>{name}</h4>
                 <p className="title">{title}</p>
                 <p className="text">{quote}</p>
+                <div className="social-icons">
+                  <i className="instagram icon"></i>
+                  <i className="facebook icon"></i>
+                  <i className="twitter icon"></i>
+                </div>
               </article>
             )
           })}
           <button className="prev" onClick={() => setIndex(index - 1)}>
-            <FiChevronLeft />
+            <FiChevronLeft size={"2.5rem"} />
           </button>
           <button className="next" onClick={() => setIndex(index + 1)}>
-            <FiChevronRight />
+            <FiChevronRight size={"2.5rem"} />
           </button>
         </div>
       </section>
