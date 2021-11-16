@@ -4,6 +4,7 @@ import Footer from "../../components/Footer"
 import Header from "../../templates/Header"
 import Hero from "../../components/Hero/index"
 import React from "react"
+import Board from "../../components/Board/index"
 
 import "./home.scss"
 import BoardMembers from "../../components/BoardMembers"
@@ -14,9 +15,10 @@ function Home() {
       <div className="Home">
         <Header />
         <Hero />
-        <HomeAbout />
-        <BoardMembers />
-        {/* <MobileAppComponent /> */}
+        {/* <HomeAbout /> */}
+        <Board />
+        {/* <BoardMembers /> */}
+        <MobileAppComponent />
         <Footer />
       </div>
     </>
