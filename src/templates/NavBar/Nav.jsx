@@ -15,7 +15,7 @@ const Nav = () => {
       <div className="navBar">
         <img src={logo} alt="" className="hamburger" />
         <h1
-          className="hamburger active-color "
+          className="hamburger active-color"
           onClick={() => setHamBurg(!hamBurg)}
         >
           <div className="hamCircle">
@@ -44,7 +44,7 @@ const Nav = () => {
             <div className="navListRight">
               <div className="list">About Us</div>
               <div className="list">Cause</div>
-              <div className="list">Donate</div>
+              <div className="list">Events</div>
               <div className="list">Transparency</div>
               <div className="list">Our Voulunteer</div>
             </div>
