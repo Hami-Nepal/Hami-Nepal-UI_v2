@@ -1,0 +1,45 @@
+@import "../../variables";
+
+.header-section {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  @media (max-width: $gt-small-screen) {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(255, 187, 0);
+    @media (max-width: $gt-small-screen) {
+      height: 50vh;
+    }
+    .doante-btn {
+      color: black;
+    }
+  }
+  .right-content {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $gt-small-screen) {
+      height: 50vh;
+    }
+    .profile-image {
+      border-radius: 5%;
+      position: fixed;
+      height: 400px;
+      @media (max-width: $gt-small-screen) {
+        height: 200px;
+        position: relative;
+      }
+    }
+  }
+}
