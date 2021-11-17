@@ -1,16 +1,31 @@
-import "./ourwork.scss"
-import API from "../../utils/API"
-import { useEffect, useState } from "react"
-import Tab from "../../templates/Tab"
+import { useEffect, useState } from 'react';
+
+import API from '../../utils/API';
+import Tab from '../../templates/Tab';
+
+import './ourwork.scss';
 
 const OurWork = () => {
-  const [eventTypes, setEventTypes] = useState([])
+  const [types, setTypes] = useState([]);
+  const [activeType, setActiveType] = useState('');
+  const [activeStatus, setActiveStatus] = useState('');
 
   useEffect(async () => {
-    const { data: res } = await API.get("event_type")
-    const event_types = res.data.Event_type_var.map((obj) => obj.event_type)
-    console.log(event_types)
-  }, [])
+    const promises = [API.get('event_type'), API.get('cause_type')];
+    const [event_types, cause_types] = await Promise.all(promises);
+
+    const eventTypesDest = event_types.data.data.Event_type_var.map(
+      (obj) => obj.event_type
+    );
+    const causeTypesDest = cause_types.data.data.Cause_type_var.map(
+      (obj) => obj.cause_type
+    );
+
+    const mergedTypes = [...new Set([...eventTypesDest, ...causeTypesDest])];
+    setTypes(mergedTypes);
+    setActiveType(mergedTypes[0]);
+    setActiveStatus('ongoing');
+  }, []);
 
   return (
     <>
@@ -26,8 +41,13 @@ const OurWork = () => {
           </p>
         </div>
       </header>
-      <Tab types={[]} callBack={() => {}} />
+
+      <Tab
+        types={types}
+        setActiveStatus={setActiveStatus}
+        setActiveType={setActiveType}
+      />
     </>
-  )
-}
-export default OurWork
+  );
+};
+export default OurWork;

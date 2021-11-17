@@ -1,17 +1,30 @@
-import { useState } from "react"
-import "./tab.scss"
+import './tab.scss';
 
-const Tab = ({ types, callBack }) => {
-  const [activeTab, setActiveTab] = useState(types[0])
-
-  callBack(activeTab)
-
+const Tab = ({ types, setActiveType, setActiveStatus }) => {
   return (
-    <select className="tab">
-      {types.map((type) => (
-        <option className="tab-option">{type}</option>
-      ))}
-    </select>
-  )
-}
-export default Tab
+    <div className="tab">
+      <select
+        className="tab__select"
+        onChange={(e) => setActiveType(e.target.value)}
+      >
+        {types.map((type) => (
+          <option key={type} className="tab__option" value={type}>
+            {type}
+          </option>
+        ))}
+      </select>
+      <select
+        className="tab__select"
+        onChange={(e) => setActiveStatus(e.target.value)}
+      >
+        <option className="tab__option" value="ongoing">
+          On going
+        </option>
+        <option className="tab__option" value="past">
+          Past
+        </option>
+      </select>
+    </div>
+  );
+};
+export default Tab;
