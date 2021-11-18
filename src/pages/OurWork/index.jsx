@@ -1,18 +1,27 @@
+// npm modules
 import { useEffect, useState } from 'react';
 
+// utils
 import API from '../../utils/API';
-import Tab from '../../templates/Tab';
 
+// templates or components
+import Tab from '../../templates/Tab';
+import CauseEventCard from '../../components/CauseEventCard';
+import Footer from '../../components/Footer';
+
+// static assets
 import './ourwork.scss';
 
 const OurWork = () => {
   const [eventTypes, setEventTypes] = useState([]);
   const [activeEventType, setActiveEventType] = useState('');
   const [activeEventStatus, setActiveEventStatus] = useState('ongoing');
+  const [eventCards, setEventCards] = useState([]);
 
   const [causeTypes, setCauseTypes] = useState([]);
   const [activeCauseType, setActiveCauseType] = useState('');
   const [activeCauseStatus, setActiveCauseStatus] = useState('ongoing');
+  const [causeCards, setCauseCards] = useState([]);
 
   useEffect(async () => {
     const promises = [API.get('event_type'), API.get('cause_type')];
@@ -31,8 +40,22 @@ const OurWork = () => {
     setActiveCauseType(causeTypesDest[0]);
   }, []);
 
+  useEffect(async () => {
+    const { data } = await API.get(
+      `events?type=${activeEventType}&status=${activeEventStatus}`
+    );
+    setEventCards(data.data);
+  }, [activeEventType, activeEventStatus]);
+
+  useEffect(async () => {
+    const { data } = await API.get(
+      `causes?cause_type=${activeCauseType}&status=${activeCauseStatus}`
+    );
+    setCauseCards(data.data.causes);
+  }, [activeCauseType, activeCauseStatus]);
+
   return (
-    <div>
+    <div className="ourWork">
       <div className="ourWorkHero">
         <h1 className="ourWorkHero__heading">Our Work</h1>
         <p className="ourWorkHero__desc">
@@ -44,13 +67,51 @@ const OurWork = () => {
         </p>
       </div>
 
-      <h2>Causes</h2>
+      <div className="ourWorkContent">
+        <h2>Event</h2>
+        <Tab
+          types={eventTypes}
+          setActiveStatus={setActiveEventStatus}
+          setActiveType={setActiveEventType}
+        />
+        <div className="ourWorkCards">
+          {eventCards.length ? (
+            eventCards.map((card) => (
+              <CauseEventCard
+                key={card._id}
+                card={card}
+                href={`/events/${card._id}`}
+              />
+            ))
+          ) : (
+            <h2>No cards</h2>
+          )}
+        </div>
 
-      <Tab
-        types={eventTypes}
-        setActiveStatus={setActiveEventStatus}
-        setActiveType={setActiveEventType}
-      />
+        <hr className="ourWorkHr" />
+
+        <h2>Causes</h2>
+        <Tab
+          types={causeTypes}
+          setActiveStatus={setActiveCauseStatus}
+          setActiveType={setActiveCauseType}
+        />
+        <div className="ourWorkCards">
+          {causeCards.length ? (
+            causeCards.map((card) => (
+              <CauseEventCard
+                key={card._id}
+                card={card}
+                href={`/events/${card._id}`}
+              />
+            ))
+          ) : (
+            <h2>No cards</h2>
+          )}
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 };
