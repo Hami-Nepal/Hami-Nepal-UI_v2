@@ -1,12 +1,14 @@
-import MobileAppComponent from '../../components/MobileApp';
-import Footer from '../../components/Footer';
-import Header from '../../templates/Header';
-import Hero from '../../components/Hero';
-import Board from '../../components/Board';
-import HomeTransparency from '../../components/HomeTransparency';
-import Partner from '../../components/Home Page - Our Partner/';
-
-import './home.scss';
+import News from "../../components/HomeAboutUsSection"
+import MobileAppComponent from "../../components/MobileApp"
+import Partner from "../../components/Home Page - Our Partner/index"
+import Footer from "../../components/Footer"
+import Header from "../../templates/Header"
+import Hero from "../../components/Hero/index"
+import Work from "../../components/Home Page- How We Work/index"
+import React from "react"
+import "./home.scss"
+import HomeTransparency from "../../components/HomeTransparency"
+import Borad from "../../components/Board/index"
 
 function Home() {
   return (
@@ -15,13 +17,15 @@ function Home() {
         <Header />
         <Hero />
         <HomeTransparency />
-        <Board />
+        {/* <News /> */}
+        <Work />
+        <Borad />
         <MobileAppComponent />
         <Partner />
         <Footer />
       </div>
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home

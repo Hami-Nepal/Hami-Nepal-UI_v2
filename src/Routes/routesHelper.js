@@ -3,6 +3,7 @@ import {
   HOME_PAGE,
   OUR_WORK,
   PAGE_NOT_FOUND,
+  Common_Landing_Page,
 } from "./constants"
 
 const routes = {
@@ -19,6 +20,11 @@ const routes = {
     private: false,
     pageName: "OurWork",
   },
+  [Common_Landing_Page]: {
+    private: false,
+    pageName: "CommonLandingPage",
+  },
+
   // Add your route here
 
   [PAGE_NOT_FOUND]: {

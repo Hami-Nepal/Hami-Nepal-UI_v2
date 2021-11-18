@@ -1,0 +1,61 @@
+@import "../../variables";
+
+.hero-section {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  margin-top: 0;
+  height: 100vh;
+  background-position: top;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(202, 87, 87, 0.507)),
+    url("./images/IMG_9671.jpg");
+  background-size: cover;
+  .quote_contain {
+    color: rgb(245, 241, 241);
+    position: absolute;
+    max-width: 60rem;
+    text-align: justify;
+    top: 30%;
+    width: 50vw;
+  }
+  .heading__title {
+    font-size: 7rem;
+    margin-bottom: 3rem;
+    display: inline-block;
+    @media (max-width: $gt-small-screen) {
+      font-size: 3rem;
+    }
+    @media (max-width: $gt-medium-screen) {
+      font-size: 3rem;
+    }
+  }
+  .heading__title::first-letter {
+    color: red;
+  }
+  .heading__description {
+    letter-spacing: 0.1rem;
+    font-size: 23px;
+    font-weight: 500;
+    color: #cccccc;
+    @media (max-width: $gt-small-screen) {
+      font-size: 1.2rem;
+    }
+    @media (max-width: $gt-medium-screen) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .heading__titlehover:hover::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background: indianred;
+  }
+  @media (max-width: $gt-small-screen) {
+  }
+}
