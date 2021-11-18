@@ -1,12 +1,13 @@
-@import "../../variables";
+@import '../../variables';
 
 .Button {
-  width: 255px;
-  height: 75px;
+  display: block;
+  width: 100%;
   font-size: 1.5rem;
-  padding: 12px 40px;
+  padding: 1.5rem 2rem;
   font-weight: 600;
-  border: 3px solid;
+  border: 3px solid black;
+  cursor: pointer;
 
   &-transparent {
     background-color: transparent;

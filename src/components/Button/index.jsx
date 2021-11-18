@@ -1,15 +1,25 @@
-import classes from "../../utils/classes"
+import classes from '../../utils/classes';
 
-import "./button.scss"
+import './button.scss';
 
-const Button = ({ text, variant = "transparent" }) => {
-  const buttonClass = classes("Button", {
-    "Button-transparent": variant === "transparent",
-    "Button-white": variant === "white",
-    "Button-official": variant === "official",
-  })
+const Button = (props) => {
+  const { text, variant = 'transparent' } = props;
 
-  return <button className={buttonClass}>{text}</button>
-}
+  const buttonClass = classes('Button', {
+    'Button-transparent': variant === 'transparent',
+    'Button-white': variant === 'white',
+    'Button-official': variant === 'official',
+  });
 
-export default Button
+  return (
+    <button
+      {...props}
+      className={buttonClass}
+      onClick={(e) => e.preventDefault()}
+    >
+      {text}
+    </button>
+  );
+};
+
+export default Button;
