@@ -10,7 +10,7 @@ const HomeTransparency = () => {
 
   useEffect(async () => {
     const promises = [
-      API.get('/donations?limit=5&page=1'),
+      API.get('/donations?sort=-donation_amount&limit=5&page=1'),
       API.get('/find/totalDonations'),
       API.get('/find/totalExpenses'),
     ];
