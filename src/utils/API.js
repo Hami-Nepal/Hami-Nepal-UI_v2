@@ -1,6 +1,7 @@
 import axios from "axios"
 
-const token = JSON.parse(localStorage.getItem("userInfo")).token
+let token = JSON.parse(localStorage.getItem("userInfo"))
+token = token && token.token
 
 export default axios.create({
   baseURL: "https://haminepal.herokuapp.com/api/v1/",
