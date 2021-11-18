@@ -8,6 +8,7 @@ import API from '../../utils/API';
 import Tab from '../../templates/Tab';
 import CauseEventCard from '../../components/CauseEventCard';
 import Footer from '../../components/Footer';
+import Header from '../../templates/Header';
 
 // static assets
 import './ourwork.scss';
@@ -56,6 +57,8 @@ const OurWork = () => {
 
   return (
     <div className="ourWork">
+      <Header />
+
       <div className="ourWorkHero">
         <h1 className="ourWorkHero__heading">Our Work</h1>
         <p className="ourWorkHero__desc">
