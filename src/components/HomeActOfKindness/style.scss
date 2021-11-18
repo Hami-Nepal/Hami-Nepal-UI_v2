@@ -21,6 +21,11 @@
     gap: 2rem;
     overflow-x: auto;
     margin-top: 2rem;
+    align-items: stretch;
+
+    & > * {
+      flex: 1 1 200px;
+    }
   }
 }
 
