@@ -4,3 +4,4 @@ export const PAGE_NOT_FOUND = '/*';
 export const OUR_WORK = '/our-work';
 export const Common_Landing_Page = '/common-landing-page';
 export const ACT_OF_KINDNESS_LANDING_PAGE = '/act-of-kindness/:id';
+export const EVENT_LANDING_PAGE = '/events/:id';
