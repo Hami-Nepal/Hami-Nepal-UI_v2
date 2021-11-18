@@ -4,33 +4,38 @@ import {
   OUR_WORK,
   PAGE_NOT_FOUND,
   Common_Landing_Page,
-} from "./constants"
+  CAUSES,
+} from './constants';
 
 const routes = {
   [HOME_PAGE]: {
     private: false,
-    pageName: "Home",
+    pageName: 'Home',
   },
 
   [CONTACT_US_PAGE]: {
     private: false,
-    pageName: "ContactUS",
+    pageName: 'ContactUS',
   },
   [OUR_WORK]: {
     private: false,
-    pageName: "OurWork",
+    pageName: 'OurWork',
   },
   [Common_Landing_Page]: {
     private: false,
-    pageName: "CommonLandingPage",
+    pageName: 'CommonLandingPage',
+  },
+  [CAUSES]: {
+    private: false,
+    pageName: 'Causes',
   },
 
   // Add your route here
 
   [PAGE_NOT_FOUND]: {
     private: false,
-    pageName: "PageNotFound",
+    pageName: 'PageNotFound',
   },
-}
+};
 
-export default routes
+export default routes;
