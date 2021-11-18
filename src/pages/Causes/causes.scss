@@ -1,0 +1,83 @@
+@import '../../variables';
+
+.causesHero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(202, 87, 87, 0.842)),
+    url('./images/IMG_9671.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10rem 5rem;
+
+  &__heading {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+    @media (min-width: $gt-medium-screen) {
+      font-size: 6rem;
+    }
+
+    @media (min-width: $gt-large-screen) {
+      font-size: 8rem;
+    }
+
+    &::first-letter {
+      color: rgb(248, 83, 83);
+    }
+  }
+
+  &__desc {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.8rem;
+    width: 100%;
+    max-width: 800px;
+    font-weight: 500;
+
+    @media (min-width: $gt-medium-screen) {
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.causesContent {
+  width: 90%;
+  margin: 3rem auto;
+
+  h2 {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+}
+
+.causesHr {
+  height: 1px;
+  background-color: rgb(199, 199, 199);
+  border: none;
+  margin: 4rem 0;
+}
+
+.causesCards {
+  border: 1px solid rgb(148, 148, 148);
+  margin: 2rem 0;
+
+  display: grid;
+  gap: 2rem;
+
+  @media (min-width: ($gt-small-screen + 50px)) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $gt-medium-screen) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: $gt-large-screen) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
