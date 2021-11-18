@@ -1,29 +1,28 @@
-import React from "react";
-import logo from "./logo.png";
-import "./navBar.css";
-import { useState } from "react";
+import { Link } from 'react-router-dom';
+import logo from './logo.png';
+import './navBar.css';
+import { useState } from 'react';
 const Nav = () => {
   const [hamBurg, setHamBurg] = useState(false);
-  if (hamBurg==true)  {
-    document.body.style.overflow='hidden';
-  }
-  else{
-    document.body.style.overflowY='scroll'
+  if (hamBurg == true) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflowY = 'scroll';
   }
   return (
     <>
       <div className="navBar">
-        <img src={logo} alt="" className="hamburger" />
+        <Link to="/">
+          <img src={logo} alt="" className="hamburger" />
+        </Link>
         <h1
           className="hamburger active-color"
           onClick={() => setHamBurg(!hamBurg)}
         >
-          <div className="hamCircle">
-          {hamBurg ? "🗙" : "☰"}
-          </div>
+          <div className="hamCircle">{hamBurg ? '🗙' : '☰'}</div>
         </h1>
       </div>
-      <div className={hamBurg ? "navItems active" : "navItems"}>
+      <div className={hamBurg ? 'navItems active' : 'navItems'}>
         <div className="navContainer">
           <div className="navLeft">
             <div className="navListLeft">
@@ -34,9 +33,9 @@ const Nav = () => {
               <div className="list">Contact us</div>
               <div className="nav-underline"></div>
               <div className="loginRegister">
-                  <div className="login">login</div>
-                  <div className="loginRegister-underline"></div>
-                  <div className="register">Signup</div>
+                <div className="login">login</div>
+                <div className="loginRegister-underline"></div>
+                <div className="register">Signup</div>
               </div>
             </div>
           </div>
