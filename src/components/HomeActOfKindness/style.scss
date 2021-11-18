@@ -1,0 +1,51 @@
+@import '../../variables';
+
+.homeActOfKindness {
+  width: 90%;
+  margin: 4rem auto;
+
+  h1 {
+    font-size: 2rem !important;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+      color: $primary-color;
+      font-size: 1rem;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    margin-top: 2rem;
+  }
+}
+
+.card {
+  background-color: rgb(36, 36, 36);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &__title {
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+  }
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+
+  &__summary {
+    font-size: 1rem;
+    color: rgb(197, 195, 195);
+    line-height: 1.6rem;
+    text-align: center;
+  }
+}
