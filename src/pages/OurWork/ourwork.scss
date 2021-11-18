@@ -27,6 +27,9 @@
     @media (max-width: $gt-small-screen) {
       font-size: 3rem;
     }
+    @media (max-width: $gt-medium-screen) {
+      font-size: 3rem;
+    }
   }
   .heading__title::first-letter {
     color: red;
@@ -38,6 +41,9 @@
     color: #cccccc;
     @media (max-width: $gt-small-screen) {
       font-size: 1.2rem;
+    }
+    @media (max-width: $gt-medium-screen) {
+      font-size: 1.5rem;
     }
   }
 

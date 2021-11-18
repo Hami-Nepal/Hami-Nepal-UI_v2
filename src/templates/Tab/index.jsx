@@ -1,18 +1,8 @@
-import './tab.scss';
+import "./tab.scss"
 
 const Tab = ({ types, setActiveType, setActiveStatus }) => {
   return (
     <div className="tab">
-      <select
-        className="tab__select"
-        onChange={(e) => setActiveType(e.target.value)}
-      >
-        {types.map((type) => (
-          <option key={type} className="tab__option" value={type}>
-            {type}
-          </option>
-        ))}
-      </select>
       <select
         className="tab__select"
         onChange={(e) => setActiveStatus(e.target.value)}
@@ -24,7 +14,17 @@ const Tab = ({ types, setActiveType, setActiveStatus }) => {
           Past
         </option>
       </select>
+      <select
+        className="tab__select"
+        onChange={(e) => setActiveType(e.target.value)}
+      >
+        {types.map((type) => (
+          <option key={type} className="tab__option" value={type}>
+            {type}
+          </option>
+        ))}
+      </select>
     </div>
-  );
-};
-export default Tab;
+  )
+}
+export default Tab
