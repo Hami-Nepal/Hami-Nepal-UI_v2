@@ -12,7 +12,11 @@ const CauseEventCard = ({ card, href }) => {
         <p className="causeEventCard__title">{card.name}</p>
         <img src={card.photos[0]} alt={card.name} />
         <p className="causeEventCard__summary">{card.summary}</p>
-        <Button text="Donate" variant="official" />
+        <Button
+          text="Donate"
+          variant="official"
+          style={{ padding: '.6rem', fontSize: '1.2rem' }}
+        />
       </Link>
     </div>
   );
