@@ -5,6 +5,7 @@ import {
   PAGE_NOT_FOUND,
   Common_Landing_Page,
   CAUSES,
+  EVENTS,
 } from './constants';
 
 const routes = {
@@ -28,6 +29,10 @@ const routes = {
   [CAUSES]: {
     private: false,
     pageName: 'Causes',
+  },
+  [EVENTS]: {
+    private: false,
+    pageName: 'Events',
   },
 
   // Add your route here
